@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg">
+
+    <Button
+        android:id="@+id/btnTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Komoditi (HS)"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:background="@drawable/subtitle_bg"
+        android:textColor="@color/white"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlForm"
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:layout_below="@id/btnTitle1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/form_layout"
+        android:paddingTop="5dp"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5">
+
+        <LinearLayout
+            android:id="@+id/linePilihData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvSelectData"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:text="@string/select_data"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTitikDua1"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/pilih_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/data_names"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linePeriode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linePilihData"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvPeriode"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:text="@string/select_time"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTitikDua2"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/pilih_periode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/time_name"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linePeriode"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_bg"
+                android:fontFamily="sans-serif-light"
+                android:hint="awal periode"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="s.d."
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:hint="akhir periode"
+                android:textColorHint="@color/white"
+                android:paddingRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_bg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineNomenklatur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineWaktu"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvNomenklatur"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:text="@string/select_nomenklatur"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTitikDua3"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/pilih_nomenklatur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/nomenklatur_name"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineSatuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineNomenklatur"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvSatuan"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="10dp"
+                android:text="@string/select_satuan"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTitikDua4"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text=":"
+                android:textAllCaps="true"
+                android:textColor="@color/gradStart"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/pilih_satuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/satuan_name"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnShowData"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/lineSatuan"
+            android:layout_marginTop="50dp"
+            android:text="Show Data"
+            android:textAllCaps="false"
+            android:background="@drawable/button_submit"
+            android:textColor="@color/gradStart"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

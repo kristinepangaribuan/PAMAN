@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/grad_bg"
+    tools:context=".MainActivity">
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:fontFamily="sans-serif-medium"
+            android:textAllCaps="false"
+            android:background="@drawable/subtitle_bg"
+            android:textColor="@color/white"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_below="@id/btnHome"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPilihan1"
+            android:text="Total Komoditi (HS)"
+            android:textColor="#205b76"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_below="@id/line1"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPilihan2"
+            android:text="Total Negara Mitra Dagang atau Group Mitra"
+            android:textColor="#205b76"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_below="@id/line2"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPilihan3"
+            android:text="Negara Mitra Dagang dengan Komoditi (HS)"
+            android:textColor="#205b76"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_below="@id/line3"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPilihan4"
+            android:text="HS/GRoup Komoditi dengan Negara Mitra Dagang"
+            android:textColor="#205b76"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5" />
+    </LinearLayout>
+
+</RelativeLayout>

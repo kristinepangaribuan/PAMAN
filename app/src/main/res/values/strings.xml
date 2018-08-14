@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Kemendag</string>
+    <string name="title">Data Statistik Perdagangan Indonesia</string>
+    <string name="select_data">Pilih Data</string>
+    <string-array name="data_names">
+        <item>Ekspor</item>
+        <item>Impor</item>
+    </string-array>
+    <string name="select_time">Periode Waktu</string>
+    <string-array name="time_name">
+        <item>bulanan</item>
+        <item>tahunan</item>
+    </string-array>
+    <string name="select_nomenklatur">Nomenklatur</string>
+    <string-array name="nomenklatur_name">
+        <item>BTBMI 2007</item>
+        <item>BTKI 2012</item>
+        <item>BTKI 2017</item>
+    </string-array>
+    <string name="select_satuan">Pilih Satuan Data</string>
+    <string-array name="satuan_name">
+        <item>Volume(Kg)</item>
+        <item>Nilai(US)</item>
+    </string-array>
+
+    <string-array name="select_hs">Pilih HS</string-array>
+    <string-array name="hs">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="select_negara">Pilih Negara</string-array>
+    <string-array name="negara">
+        <item>ASEAN</item>
+        <item>EROPA</item>
+        <item>DUNIA</item>
+    </string-array>
+</resources>
