@@ -1,12 +1,19 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class Modelms_hs12 {
-    private String HS12_OK;
+import com.google.gson.annotations.SerializedName;
 
+public class Modelms_hs12 {
+    @SerializedName("HS12_OK")
+    private String HS12_OK;
+    @SerializedName("NO")
     private Double NO;
+    @SerializedName("HS12")
     private String HS12;
+    @SerializedName("DESK1")
     private String DESK1;
+    @SerializedName("DESK2")
     private String DESK2;
+    @SerializedName("SEKTOR")
     private String SEKTOR;
 
     public Modelms_hs12() {

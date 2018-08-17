@@ -1,55 +1,94 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class ModelImpor {
-    private int Id;
+import com.google.gson.annotations.SerializedName;
 
-    private String MIG_NON;
+public class ModelImpor {
+    @SerializedName("Id")
+    private int Id;
+    @SerializedName("KD_PROP")
     private String KD_PROP;
+    @SerializedName("PEL")
     private String PEL;
+    @SerializedName("PODALTCODE")
     private String PODALTCODE;
+    @SerializedName("HS")
     private String HS;
+    @SerializedName("NEG")
     private String NEG;
+    @SerializedName("N_04")
     private Double N_04;
+    @SerializedName("N_05")
     private Double N_05;
+    @SerializedName("N_06")
     private Double N_06;
+    @SerializedName("N_07")
     private Double N_07;
+    @SerializedName("N_08")
     private Double N_08;
+    @SerializedName("N_09")
     private Double N_09;
+    @SerializedName("N_10")
     private Double N_10;
+    @SerializedName("N_11")
     private Double N_11;
+    @SerializedName("N_12")
     private Double N_12;
+    @SerializedName("N_13")
     private Double N_13;
+    @SerializedName("N_14")
     private Double N_14;
+    @SerializedName("N_15")
     private Double N_15;
+    @SerializedName("N_16")
     private Double N_16;
+    @SerializedName("N_17")
     private Double N_17;
+    @SerializedName("NP_LALU")
     private Double NP_LALU;
+    @SerializedName("NP_SEKA")
     private Double NP_SEKA;
+    @SerializedName("V_04")
     private Double V_04;
+    @SerializedName("V_05")
     private Double V_05;
+    @SerializedName("V_06")
     private Double V_06;
+    @SerializedName("V_07")
     private Double V_07;
+    @SerializedName("V_08")
     private Double V_08;
+    @SerializedName("V_09")
     private Double V_09;
+    @SerializedName("V_10")
     private Double V_10;
+    @SerializedName("V_11")
     private Double V_11;
+    @SerializedName("V_12")
     private Double V_12;
+    @SerializedName("V_13")
     private Double V_13;
+    @SerializedName("V_14")
     private Double V_14;
+    @SerializedName("V_15")
     private Double V_15;
+    @SerializedName("V_16")
     private Double V_16;
+    @SerializedName("V_17")
     private Double V_17;
+    @SerializedName("VP_LALU")
     private Double VP_LALU;
+    @SerializedName("VP_SEKA")
     private Double VP_SEKA;
+    @SerializedName("PERIOD")
     private String PERIOD;
+    @SerializedName("GAB")
     private String GAB;
 
     public ModelImpor() {
     }
 
-    public ModelImpor(int id, String MIG_NON, String KD_PROP, String PEL, String PODALTCODE, String HS, String NEG, Double n_04, Double n_05, Double n_06, Double n_07, Double n_08, Double n_09, Double n_10, Double n_11, Double n_12, Double n_13, Double n_14, Double n_15, Double n_16, Double n_17, Double NP_LALU, Double NP_SEKA, Double v_04, Double v_05, Double v_06, Double v_07, Double v_08, Double v_09, Double v_10, Double v_11, Double v_12, Double v_13, Double v_14, Double v_15, Double v_16, Double v_17, Double VP_LALU, Double VP_SEKA, String PERIOD, String GAB) {
+    public ModelImpor(int id, String KD_PROP, String PEL, String PODALTCODE, String HS, String NEG, Double n_04, Double n_05, Double n_06, Double n_07, Double n_08, Double n_09, Double n_10, Double n_11, Double n_12, Double n_13, Double n_14, Double n_15, Double n_16, Double n_17, Double NP_LALU, Double NP_SEKA, Double v_04, Double v_05, Double v_06, Double v_07, Double v_08, Double v_09, Double v_10, Double v_11, Double v_12, Double v_13, Double v_14, Double v_15, Double v_16, Double v_17, Double VP_LALU, Double VP_SEKA, String PERIOD, String GAB) {
         Id = id;
-        this.MIG_NON = MIG_NON;
         this.KD_PROP = KD_PROP;
         this.PEL = PEL;
         this.PODALTCODE = PODALTCODE;
@@ -97,14 +136,6 @@ public class ModelImpor {
 
     public void setId(int id) {
         Id = id;
-    }
-
-    public String getMIG_NON() {
-        return MIG_NON;
-    }
-
-    public void setMIG_NON(String MIG_NON) {
-        this.MIG_NON = MIG_NON;
     }
 
     public String getKD_PROP() {

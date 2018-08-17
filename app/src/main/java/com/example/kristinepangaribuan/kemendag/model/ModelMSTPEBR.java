@@ -1,17 +1,26 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class ModelMSTPEBR {
+    @SerializedName("KD_PEL")
     private  String KD_PEL;
+    @SerializedName("NO")
     private Double NO;
+    @SerializedName("KD_PROP")
     private String KD_PROP;
+    @SerializedName("NM_PROP")
     private String NM_PROP;
+    @SerializedName("KD_HURUF")
     private String KD_HURUF;
+    @SerializedName("PELABUHAN")
     private String PELABUHAN;
+    @SerializedName("PEL")
     private String PEL;
+    @SerializedName("MODE_TRANS")
     private String MODE_TRANS;
 
     public ModelMSTPEBR() {
-
     }
 
     public ModelMSTPEBR(String KD_PEL, Double NO, String KD_PROP, String NM_PROP, String KD_HURUF, String PELABUHAN, String PEL, String MODE_TRANS) {

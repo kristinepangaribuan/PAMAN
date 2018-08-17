@@ -1,55 +1,92 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class ModelEkspor {
-    private int Id;
+import com.google.gson.annotations.SerializedName;
 
-    private String MIG_NON;
+public class ModelEkspor {
+    @SerializedName("id")
+    private int Id;
+    @SerializedName("kd_prop")
     private String KD_PROP;
+    @SerializedName("pel")
     private String PEL;
+    @SerializedName("podaltcode")
     private String PODALTCODE;
+    @SerializedName("hs")
     private String HS;
+    @SerializedName("neg")
     private String NEG;
+    @SerializedName("n_04")
     private Double N_04;
+    @SerializedName("n_05")
     private Double N_05;
+    @SerializedName("n_06")
     private Double N_06;
+    @SerializedName("n_07")
     private Double N_07;
+    @SerializedName("n_08")
     private Double N_08;
+    @SerializedName("n_09")
     private Double N_09;
+    @SerializedName("n_10")
     private Double N_10;
+    @SerializedName("n_11")
     private Double N_11;
+    @SerializedName("n_12")
     private Double N_12;
+    @SerializedName("n_13")
     private Double N_13;
+    @SerializedName("n_14")
     private Double N_14;
+    @SerializedName("n_15")
     private Double N_15;
+    @SerializedName("n_16")
     private Double N_16;
+    @SerializedName("n_17")
     private Double N_17;
+    @SerializedName("np_lalu")
     private Double NP_LALU;
+    @SerializedName("np_seka")
     private Double NP_SEKA;
+    @SerializedName("v_04")
     private Double V_04;
+    @SerializedName("v_05")
     private Double V_05;
+    @SerializedName("v_06")
     private Double V_06;
+    @SerializedName("v_07")
     private Double V_07;
+    @SerializedName("v_08")
     private Double V_08;
+    @SerializedName("v_09")
     private Double V_09;
+    @SerializedName("v_10")
     private Double V_10;
+    @SerializedName("v_11")
     private Double V_11;
+    @SerializedName("v_12")
     private Double V_12;
+    @SerializedName("v_13")
     private Double V_13;
+    @SerializedName("v_14")
     private Double V_14;
+    @SerializedName("v_15")
     private Double V_15;
+    @SerializedName("v_16")
     private Double V_16;
+    @SerializedName("v_17")
     private Double V_17;
+    @SerializedName("vp_lalu")
     private Double VP_LALU;
+    @SerializedName("vp_seka")
     private Double VP_SEKA;
+    @SerializedName("period")
     private String PERIOD;
-    private String GAB;
 
     public ModelEkspor() {
     }
 
-    public ModelEkspor(int id, String MIG_NON, String KD_PROP, String PEL, String PODALTCODE, String HS, String NEG, Double n_04, Double n_05, Double n_06, Double n_07, Double n_08, Double n_09, Double n_10, Double n_11, Double n_12, Double n_13, Double n_14, Double n_15, Double n_16, Double n_17, Double NP_LALU, Double NP_SEKA, Double v_04, Double v_05, Double v_06, Double v_07, Double v_08, Double v_09, Double v_10, Double v_11, Double v_12, Double v_13, Double v_14, Double v_15, Double v_16, Double v_17, Double VP_LALU, Double VP_SEKA, String PERIOD, String GAB) {
+    public ModelEkspor(int id, String KD_PROP, String PEL, String PODALTCODE, String HS, String NEG, Double n_04, Double n_05, Double n_06, Double n_07, Double n_08, Double n_09, Double n_10, Double n_11, Double n_12, Double n_13, Double n_14, Double n_15, Double n_16, Double n_17, Double NP_LALU, Double NP_SEKA, Double v_04, Double v_05, Double v_06, Double v_07, Double v_08, Double v_09, Double v_10, Double v_11, Double v_12, Double v_13, Double v_14, Double v_15, Double v_16, Double v_17, Double VP_LALU, Double VP_SEKA, String PERIOD) {
         Id = id;
-        this.MIG_NON = MIG_NON;
         this.KD_PROP = KD_PROP;
         this.PEL = PEL;
         this.PODALTCODE = PODALTCODE;
@@ -88,7 +125,6 @@ public class ModelEkspor {
         this.VP_LALU = VP_LALU;
         this.VP_SEKA = VP_SEKA;
         this.PERIOD = PERIOD;
-        this.GAB = GAB;
     }
 
     public int getId() {
@@ -97,14 +133,6 @@ public class ModelEkspor {
 
     public void setId(int id) {
         Id = id;
-    }
-
-    public String getMIG_NON() {
-        return MIG_NON;
-    }
-
-    public void setMIG_NON(String MIG_NON) {
-        this.MIG_NON = MIG_NON;
     }
 
     public String getKD_PROP() {
@@ -409,13 +437,5 @@ public class ModelEkspor {
 
     public void setPERIOD(String PERIOD) {
         this.PERIOD = PERIOD;
-    }
-
-    public String getGAB() {
-        return GAB;
-    }
-
-    public void setGAB(String GAB) {
-        this.GAB = GAB;
     }
 }

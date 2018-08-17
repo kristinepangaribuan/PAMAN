@@ -1,10 +1,17 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class ModelPegawai {
+    @SerializedName("nip")
     private String Nip;
+    @SerializedName("nama")
     private String NAMA;
+    @SerializedName("unit_eselon_I")
     private String UNIT_ESELON_I;
+    @SerializedName("unit_eselon_II")
     private String UNIT_ESELON_II;
+    @SerializedName("jabatan")
     private String Jabatan;
 
     public ModelPegawai() {

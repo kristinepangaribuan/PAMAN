@@ -1,15 +1,25 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class ModelMstHS2007 {
-    private String hs07;
+import com.google.gson.annotations.SerializedName;
 
+public class ModelMstHS2007 {
+    @SerializedName("hs07")
+    private String hs07;
+    @SerializedName("desk")
     private String desk;
+    @SerializedName("bec")
     private String bec;
+    @SerializedName("sitc")
     private String sitc;
+    @SerializedName("oilgrpcode")
     private String oilgrpcode;
+    @SerializedName("soilgrpcod")
     private String soilgrpcod;
+    @SerializedName("sector_cod")
     private String sector_cod;
+    @SerializedName("sector_desk")
     private String sector_desk;
+    @SerializedName("ket")
     private String ket;
 
     public ModelMstHS2007() {

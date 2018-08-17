@@ -1,28 +1,51 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class ModelEXPBTKI {
-    private String HSXCODE;
+import com.google.gson.annotations.SerializedName;
 
+public class ModelEXPBTKI {
+    @SerializedName("HSXCODE")
+    private String HSXCODE;
+    @SerializedName("GAB")
     private String GAB;
+    @SerializedName("KD")
     private String KD;
+    @SerializedName("PODALTCODE")
     private String PODALTCODE;
+    @SerializedName("OLDCTRYCOD")
     private String OLDCTRYCOD;
+    @SerializedName("N12")
     private Double N12;
+    @SerializedName("N13")
     private Double N13;
+    @SerializedName("N14")
     private Double N14;
+    @SerializedName("N15")
     private Double N15;
+    @SerializedName("N16")
     private Double N16;
+    @SerializedName("N17")
     private Double N17;
+    @SerializedName("NLALU")
     private Double NLALU;
+    @SerializedName("NSEKA")
     private Double NSEKA;
+    @SerializedName("V12")
     private Double V12;
+    @SerializedName("V13")
     private Double V13;
+    @SerializedName("V14")
     private Double V14;
+    @SerializedName("V15")
     private Double V15;
+    @SerializedName("V16")
     private Double V16;
+    @SerializedName("V17")
     private Double V17;
+    @SerializedName("VLALU")
     private Double VLALU;
+    @SerializedName("VSEKA")
     private Double VSEKA;
+    @SerializedName("PERIOD")
     private String PERIOD;
 
     public ModelEXPBTKI() {

@@ -1,15 +1,25 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class ModelEXP2012_2013 {
-    private String HSXCODE;
+import com.google.gson.annotations.SerializedName;
 
+public class ModelEXP2012_2013 {
+    @SerializedName("HSXCODE")
+    private String HSXCODE;
+    @SerializedName("TAHUN")
     private String TAHUN;
+    @SerializedName("PROCMTH")
     private String PROCMTH;
+    @SerializedName("PODALTCODE")
     private String PODALTCODE;
+    @SerializedName("OLDCTRYCOD")
     private String OLDCTRYCOD;
+    @SerializedName("DESTCTRY")
     private String DESTCTRY;
+    @SerializedName("SITCCODE")
     private String SITCCODE;
+    @SerializedName("NETWTHS")
     private Double NETWTHS;
+    @SerializedName("FOBHSUSD")
     private Double FOBHSUSD;
 
     public ModelEXP2012_2013() {

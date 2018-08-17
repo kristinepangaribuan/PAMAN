@@ -1,24 +1,45 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class ModelBTKI2017 {
+    @SerializedName("btki_2017")
     private String BTKI_2017;
+    @SerializedName("deskr_hs")
     private String DESKR_HS;
+    @SerializedName("bec")
     private String BEC;
+    @SerializedName("sitcrev4")
     private String SITCREV4;
+    @SerializedName("isicrev4")
     private String ISICREV4;
+    @SerializedName("oilgrpcode")
     private String OILGRPCODE;
+    @SerializedName("oilgrdesc")
     private String OILGRDESC;
+    @SerializedName("seccode")
     private String SECCODE;
+    @SerializedName("secdesc")
     private String SECDESC;
+    @SerializedName("sectorcode")
     private String SECTORCODE;
+    @SerializedName("sectordesc")
     private String SECTORDESC;
+    @SerializedName("brscode")
     private String BRSCODE;
+    @SerializedName("brsdesc")
     private String BRSDESC;
+    @SerializedName("commgrpcod")
     private String COMMGRPCOD;
+    @SerializedName("comgrpdesc")
     private String COMGRPDESC;
+    @SerializedName("commcode")
     private String COMMCODE;
+    @SerializedName("commdesc")
     private String COMMDESC;
+    @SerializedName("kbli2015")
     private String KBLI2015;
+    @SerializedName("deskkbli20")
     private String DESKKBLI20;
 
     public ModelBTKI2017() {

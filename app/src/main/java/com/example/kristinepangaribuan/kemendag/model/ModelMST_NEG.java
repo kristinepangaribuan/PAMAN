@@ -1,25 +1,42 @@
 package com.example.kristinepangaribuan.kemendag.model;
 
-public class ModelMST_NEG {
-    private String NEG;
+import com.google.gson.annotations.SerializedName;
 
+public class ModelMST_NEG {
+    @SerializedName("Id")
+    private int Id;
+    @SerializedName("NEG")
+    private String NEG;
+    @SerializedName("Kode")
     private Boolean Kode;
+    @SerializedName("COUNTER")
     private String COUNTER;
+    @SerializedName("URUT")
     private String URUT;
+    @SerializedName("URAI_ASING")
     private String URAI_ASING;
+    @SerializedName("URAI_INDO")
     private String URAI_INDO;
+    @SerializedName("URAIAN")
     private String URAIAN;
+    @SerializedName("REGION")
     private String REGION;
+    @SerializedName("AA")
     private String AA;
+    @SerializedName("KD_GNB")
     private String KD_GNB;
+    @SerializedName("oki")
     private String oki;
+    @SerializedName("apecaseannaftaeuokignb")
     private String apecaseannaftaeuokignb;
+    @SerializedName("eu")
     private String eu;
 
     public ModelMST_NEG() {
     }
 
-    public ModelMST_NEG(String NEG, Boolean kode, String COUNTER, String URUT, String URAI_ASING, String URAI_INDO, String URAIAN, String REGION, String AA, String KD_GNB, String oki, String apecaseannaftaeuokignb, String eu) {
+    public ModelMST_NEG(int id, String NEG, Boolean kode, String COUNTER, String URUT, String URAI_ASING, String URAI_INDO, String URAIAN, String REGION, String AA, String KD_GNB, String oki, String apecaseannaftaeuokignb, String eu) {
+        Id = id;
         this.NEG = NEG;
         Kode = kode;
         this.COUNTER = COUNTER;
@@ -33,6 +50,14 @@ public class ModelMST_NEG {
         this.oki = oki;
         this.apecaseannaftaeuokignb = apecaseannaftaeuokignb;
         this.eu = eu;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public String getNEG() {
