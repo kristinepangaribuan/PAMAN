@@ -19,7 +19,6 @@
         android:textSize="16sp" />
 
     <RelativeLayout
-        android:id="@+id/rlForm"
         android:layout_width="match_parent"
         android:layout_height="359dp"
         android:layout_below="@id/btnTitle1"
@@ -41,7 +40,6 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/tvSelectData"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -52,7 +50,6 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvTitikDua1"
                 android:layout_width="31dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -81,7 +78,6 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/tvPeriode"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -92,7 +88,6 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvTitikDua2"
                 android:layout_width="31dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -102,7 +97,6 @@
                 android:textSize="15sp" />
 
             <Spinner
-                android:id="@+id/pilih_periode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:entries="@array/time_name"
@@ -166,7 +160,6 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/tvNomenklatur"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -177,7 +170,6 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvTitikDua3"
                 android:layout_width="31dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -187,7 +179,6 @@
                 android:textSize="15sp" />
 
             <Spinner
-                android:id="@+id/pilih_nomenklatur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:entries="@array/nomenklatur_name"
@@ -206,7 +197,6 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/tvSatuan"
                 android:layout_width="135dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -217,7 +207,6 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvTitikDua4"
                 android:layout_width="31dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -227,7 +216,6 @@
                 android:textSize="15sp" />
 
             <Spinner
-                android:id="@+id/pilih_satuan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:entries="@array/satuan_name"
@@ -237,7 +225,6 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnShowData"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_below="@id/lineSatuan"

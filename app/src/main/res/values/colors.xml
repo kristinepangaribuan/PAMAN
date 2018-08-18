@@ -9,7 +9,5 @@
     <color name="gradStart">#205b76</color>
     <color name="gradStop">#f7012232</color>
     <color name="popStop">#20765e</color>
-    <color name="popStart">#45bc62</color>
-    <color name="colorBlack">#000000</color>
     <color name="center">#0ca7a0</color>
 </resources>

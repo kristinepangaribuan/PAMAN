@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Kemendag</string>
-    <string name="title">Data Statistik Perdagangan Indonesia</string>
     <string name="select_data">Pilih Data</string>
     <string-array name="data_names">
         <item>Ekspor</item>
@@ -23,7 +22,6 @@
         <item>Nilai(US)</item>
     </string-array>
 
-    <string-array name="select_hs">Pilih HS</string-array>
     <string-array name="hs">
         <item>2</item>
         <item>4</item>

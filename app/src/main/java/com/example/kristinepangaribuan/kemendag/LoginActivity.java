@@ -21,10 +21,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
 public class LoginActivity extends AppCompatActivity {
 
     RelativeLayout rellay1;
-    boolean status;
     private APIPaman apiPaman;
     Handler handler = new Handler();
     Runnable runnable = new Runnable() {
@@ -39,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        status = false;
         rellay1 = (RelativeLayout) findViewById(R.id.rellay1);
 
         handler.postDelayed(runnable, 2000);
@@ -47,37 +46,34 @@ public class LoginActivity extends AppCompatActivity {
         final EditText etNip = (EditText) findViewById(R.id.etNip);
 
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
-        apiPaman = RestAPI.get();
-//                Call<ModelPegawai> pegawaiCall = apiPaman.getPegawaiByNip(etNip.getText().toString());
-        Call<List<ModelPegawai>> pegawaiCall = apiPaman.getAllPegawai();
-        pegawaiCall.enqueue(new Callback<List<ModelPegawai>>() {
-            @Override
-            public void onResponse(Call<List<ModelPegawai>> call, Response<List<ModelPegawai>> response) {
-//               System.out.println(response.isSuccessful());
-                        if(response.isSuccessful()){
-                            status = true;
-//                            final ModelPegawai modelPegawai = response.body();
-//                            System.out.println(modelPegawai.getNAMA());
-//                            if(modelPegawai.getNAMA()!=null){
-//                                Toast.makeText(getApplicationContext(),"You have sign as "+modelPegawai.getNAMA(),Toast.LENGTH_LONG);
-//                                Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
-//                                startActivity(loginIntent);
-//                            }else {
-//                                Toast.makeText(getApplicationContext(),"User Not Found", Toast.LENGTH_LONG);
-//                            }
-//
-                        }
-            }
-            @Override
-            public void onFailure(Call<List<ModelPegawai>> call, Throwable t) {
-                //System.out.println("Faild");
-                status = false;
-            }
-        });
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                System.out.println(status);
+                apiPaman = RestAPI.get();
+                Call<ModelPegawai> pegawaiCall = apiPaman.getPegawaiByNip(etNip.getText().toString());
+                //Call<List<ModelPegawai>> pegawaiCall = apiPaman.getAllPegawai();
+                pegawaiCall.enqueue(new Callback<ModelPegawai>() {
+                    @Override
+                    public void onResponse(Call<ModelPegawai> call, Response<ModelPegawai> response) {
+                        if(response.isSuccessful()){
+                            final ModelPegawai modelPegawai = response.body();
+                            System.out.println(modelPegawai.getNAMA());
+                            if(modelPegawai.getNAMA()!=null){
+                                Toast.makeText(getApplicationContext(),"You have sign as "+modelPegawai.getNAMA(),Toast.LENGTH_LONG);
+                                //System.out.println(modelPegawai.getNAMA());
+                                Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
+                                startActivity(loginIntent);
+                            }else {
+                                Toast.makeText(getApplicationContext(),"User Not Found", Toast.LENGTH_LONG);
+                            }
+                        }
+                    }
+                    @Override
+                    public void onFailure(Call<ModelPegawai> call, Throwable t) {
+                        System.out.println(t.getMessage());
+                    }
+                });
             }
         });
     }

@@ -18,7 +18,6 @@
         android:textSize="16sp" />
 
     <RelativeLayout
-        android:id="@+id/rlForm"
         android:layout_width="match_parent"
         android:layout_height="359dp"
         android:layout_below="@id/btnTitle1"
@@ -40,7 +39,6 @@
             android:paddingTop="20dp">
 
             <TextView
-                android:id="@+id/tvSelectData"
                 android:layout_width="122dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
@@ -51,7 +49,6 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvTitikDua1"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
